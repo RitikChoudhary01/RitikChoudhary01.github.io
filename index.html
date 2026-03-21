@@ -371,7 +371,7 @@
             <input type="password" class="ap-input" id="aPass" placeholder="Enter password" onkeydown="if(event.key==='Enter')doLogin()">
             <button class="abtn p" onclick="doLogin()">Enter Admin</button>
             <div class="ap-err" id="aErr">Wrong password.</div>
-            <div style="margin-top:14px;font-family:'DM Mono',monospace;font-size:10px;color:var(--dim)">Default: <span style="color:var(--accent)">dhruvik123</span> — change in Settings tab</div>
+
         </div>
         <div id="adash">
             <div class="tab-bar">
@@ -560,7 +560,7 @@ const gS  = () => JSON.parse(localStorage.getItem('dv_stats') || 'null') || DS;
 const sSt = v  => localStorage.setItem('dv_stats', JSON.stringify(v));
 const gPr = () => Object.assign({}, DPR, JSON.parse(localStorage.getItem('dv_profile') || '{}'));
 const sPr = v  => localStorage.setItem('dv_profile', JSON.stringify(v));
-const gPw = () => localStorage.getItem('dv_pw') || 'dhruvik123';
+const gPw = () => localStorage.getItem('dv_pw') || 'Dhruvik@2025';
 const sPw = v  => localStorage.setItem('dv_pw', v);
 
 // ── RENDER PROJECTS ───────────────────────────────────────────
